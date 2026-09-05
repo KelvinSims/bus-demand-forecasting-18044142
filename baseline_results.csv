@@ -1,0 +1,4 @@
+model,MAE,RMSE
+"Naive (yesterday, same hour)",26.28152825836217,67.16189585166084
+"Naive (last week, same hour)",16.54049532231193,41.058718474998415
+Historical average,18.98725678736972,44.61134204281788

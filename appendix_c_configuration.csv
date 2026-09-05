@@ -1,0 +1,14 @@
+Parameter,Value,Purpose
+RANDOM_SEED,42,Fixes randomness so all reported results are reproducible
+TRAIN_END,2024-03-31,Last date used for model training
+VAL_END,2024-08-31,Last date of the validation period used for model selection
+Test period,2024-08-31 to 2024-12-31,"Held-out period, not used for tuning"
+CAPACITY,60,Planning passengers per bus in the frequency rule
+MIN_BUSES_PER_HR,1,Policy floor: minimum service retained at all hours
+MAX_BUSES_PER_HR,30,Policy ceiling: road and fleet capacity limit
+n_estimators,1500,Maximum number of boosting trees (LightGBM)
+learning_rate,0.05,Contribution of each tree (LightGBM)
+num_leaves,63,"Maximum leaves per tree, controls model complexity"
+max_cat_threshold,512,"Categorical split limit, raised for the 425-level route field"
+Early stopping,50 rounds,Halts training when validation MAE stops improving
+Training window,2023-01-01 to 2024-12-31,Pandemic-affected years 2020-2022 excluded
